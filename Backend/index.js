@@ -12,7 +12,7 @@ app.use(cors());
 app.get("/api/scrape", async (req, res) => {
   const keyword = req.query.keyword;
 
-  if (!keyword) {
+  if (!keyword) { 
     return res.status(400).json({ error: "Falta keyword" });
   }
 
